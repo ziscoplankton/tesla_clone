@@ -1,0 +1,199 @@
+#ShopHero--animate-One,
+#ShopHero--fixed-One {
+    min-height: 100vh;
+}
+#ShopHero--animate-One #ShopHeroDisplay,
+#ShopHero--fixed-One #ShopHeroDisplay{
+    height: 100vh;
+    background-image: var(--shopHeroImg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: repeat(14, 1fr);
+    color: #FFF;
+    text-align: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+#ShopHero--fixed-One #ShopHeroDisplay #ShopHeroTitle,
+#ShopHero--animate-One #ShopHeroDisplay #ShopHeroTitle{
+    grid-row: 12;
+}
+#ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails,
+#ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails{
+    grid-row: 13;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA,
+#ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA{
+    width: 100%;
+}
+#ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA button,
+#ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA button{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    border-radius: 5px;
+    border-color: transparent;
+    border-width: 3px;
+    word-spacing: 1px;
+    letter-spacing: .1px;
+}
+#ShopHero--animate-One #ShopHeroDisplay #pillsShopHero{
+    grid-row: 14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CLR FONT */
+#ShopHero--fixed-One.Lifestyle #ShopHeroDisplay #ShopHeroTitle,
+#ShopHero--fixed-One.ModelY #ShopHeroDisplay #ShopHeroTitle,
+#ShopHero--fixed-One.Model3 #ShopHeroDisplay #ShopHeroTitle{
+    color: var(--color-primary);
+}
+/* FONT WEIGHT h2 HEROTITLE */
+#ShopHeroDisplay #ShopHeroTitle h2 {
+    font-weight: 500;
+}
+ /* BTN LIFESTYLE MODEL */
+ #ShopHero--fixed-One.Lifestyle #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA button{
+    border: 3px var(--color-primary) solid;
+    background-color: transparent;
+    color: var(--color-primary);
+    transition: all .3s ease-in-out;
+ }
+ #ShopHero--fixed-One.Lifestyle #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA button:hover{
+    background-color: var(--color-primary);
+    color: #FFF;
+ }
+
+/* DISPLAY TABLET/LAPTOP SZ */
+@media (min-width: 40rem){
+    #ShopHero--animate-One #ShopHeroDisplay{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroTitle{
+
+        grid-column: 2 / span 4;
+    }
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails{
+
+        grid-column: 3 / span 2;
+
+    }
+    #ShopHero--animate-One #ShopHeroDisplay #pillsShopHero{
+        grid-column: 3 / span 2;
+    }
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA{
+        width: 100%;
+    }
+}
+
+@media (min-width: 60rem){
+    #ShopHero--fixed-One #ShopHeroDisplay,
+    #ShopHero--animate-One #ShopHeroDisplay{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    #ShopHero--fixed-One #ShopHeroDisplay #ShopHeroTitle,
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroTitle{
+
+        grid-column: 3 / span 4;
+    }
+    #ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails,
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails{
+
+        grid-column: 4 / span 2;
+
+    }
+    #ShopHero--animate-One #ShopHeroDisplay #pillsShopHero{
+        grid-column: 4 / span 2;
+    }
+    #ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA,
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA{
+        width: 75%;
+    }
+}
+@media(min-width:120rem){
+    #ShopHero--fixed-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA,
+    #ShopHero--animate-One #ShopHeroDisplay #ShopHeroDetails #ShopHeroCTA{
+        width: 50%;
+    }    
+}
+
+
+/* ADJUST IMG POSITION ON SMLL SCREEN */
+@media (max-width:30rem){
+    #ShopHero--animate-One #ShopHeroDisplay.shopHeroDisplay-0{
+        background-position: -660px 0px;
+    }
+    #ShopHero--animate-One #ShopHeroDisplay.shopHeroDisplay-1{
+        background-position: -660px 0px;
+    }
+    #ShopHero--animate-One #ShopHeroDisplay.shopHeroDisplay-2{
+        background-position: -660px 0px;
+    }
+}
+
+
+/* ANIMATION STYLES */
+#ShopHero--animate-One #ShopHeroDisplay{
+    opacity: 0;
+}
+#ShopHero--animate-One #ShopHeroDisplay.active{
+    animation: shopHeroAppear .3s forwards;
+}
+@keyframes shopHeroAppear {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
+/* FOOTER */
+
+#ShopHeroFooter{
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 2rem 0;
+}
+#ShopHeroFooter ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+@media(max-width:39rem){
+    #ShopHeroFooter ul li:nth-child(3){
+        display: none;
+    }
+    
+    #ShopHeroFooter ul{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: .9rem;
+    }
+    
+    #ShopHeroFooter{
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,781 @@
+/* BACKGROUND IMGS */
+.heroIMG--One-One,
+.heroIMG--One-Two,
+.heroIMG--One-Three, 
+.heroIMG--One-Four, 
+.heroIMG--One-Five, 
+.heroIMG--One-Six, 
+.heroIMG--One-Seven {
+    background-image: var(--heroBg);
+    background-position: center;
+    background-size: cover;
+    max-width: var(--heroWidth);
+    min-height: 50vh;
+    max-height: var(--heroHeight);
+}
+
+
+/* BACKGROUND CLRS & FONT COLORS*/
+#HeroModel--One-One {
+    background-color: var(---heroBg--One-One);
+}
+#HeroModel--One-Two {
+    background-color: var(---heroBg--One-Two);
+    overflow: hidden;
+}
+#HeroModel--One-Three {
+    background-color: var(---heroBg--One-Three);
+}
+#HeroModel--One-Four {
+    background-color: var(---heroBg--One-Four);
+}
+#HeroModel--One-Five {
+    background-color: var(---heroBg--One-Five);
+}
+#HeroModel--One-Six {
+    background-color: var(---heroBg--One-Five);
+}
+#HeroModel--One-Seven {
+    background-color: var(---heroBg--One-Five);
+}
+
+
+
+.heroImgContent--One-One,
+.heroImgContent--One-Two, .heroImgContent--One-Four, .heroImgContent--One-Five, .heroImgContent--One-Six, .heroImgContent--One-Seven {
+    color: var(--contentColor) !important;
+}
+.heroModelContent--One-One {
+    color: var(--fontColor);
+
+}
+.heroModelContent--One-Two {
+    color: var(--fontColor);
+}
+.heroModelContent--One-Three {
+    color: var(--fontColor);
+}
+.heroModelContent--One-Four {
+    color: var(--fontColor);
+}
+.heroModelContent--One-Five {
+    color: var(--fontColor);
+}
+.heroModelContent--One-Six {
+    color: var(--fontColor);
+}
+
+/* Perks Visuals */
+.heroPerkTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.heroPerkDetails {
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+/* Body Header */
+.heroModelHeader--One h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.heroModelHeader--One h3 {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+/* Body Main */
+.heroModelDescription--One span {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1px;
+}
+
+/* CTAS */
+.heroBtnCta {
+    padding: .7rem 0;
+    min-width: 100%;
+    white-space: nowrap;
+    transition: all .3s ease-in-out;
+}
+
+/* PRIMARY */
+.heroBtnCta--primary-One,
+.heroBtnCta--primary-Two {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.heroBtnCta--primary-One.white,
+.heroBtnCta--primary-Two.white {
+    color: #000;
+    background-color: transparent;
+    border: 3px black solid;
+}
+
+.heroBtnCta--primary-One.black,
+.heroBtnCta--primary-Two.black {
+    color: #FFF;
+    background-color: transparent;
+    border: 3px #FFF solid;
+}
+
+/* SECONDARY */
+.heroBtnCta--secondary-One,
+.heroBtnCta--secondary-Two {
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.heroBtnCta--secondary-One.white,
+.heroBtnCta--secondary-Two.white {
+    color: #000;
+    background-color: var(--heroOne-secondaryBtnBg);
+    color: (--color-secondary);
+    border: 3px transparent solid;
+}
+
+.heroBtnCta--secondary-One.black,
+.heroBtnCta--secondary-Two.black {
+    color: #FFF;
+    background-color: var(--modelBtnBg-secondary);
+    border: 3px transparent solid;
+}
+
+
+
+/*HOVERS*/
+/*PRIMARIES */
+.heroBtnCta--primary-One.white:hover,
+.heroBtnCta--primary-Two.white:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.heroBtnCta--primary-One.black:hover,
+.heroBtnCta--primary-Two.black:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+/*SECONDARIES*/
+.heroBtnCta--secondary-One.white:hover,
+.heroBtnCta--secondary-Two.white:hover {
+    background-color: var(--modelBtnFont-secondary);
+}
+
+.heroBtnCta--secondary-One.black:hover,
+.heroBtnCta--secondary-Two.black:hover {
+    background-color: var(--modelBtnBg-secondaryHover);
+}
+
+
+/**
+*
+* HERO--One
+*
+**/
+/* IMG CONTENT*/
+#Hero--One {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.heroImgContent--One {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 5;
+}
+
+.HeroPerk {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    opacity: 0;
+}
+
+
+/* BODY */
+
+.heroModelContent--One {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* HEADER */
+.heroModelHeader--One {}
+
+/* DESCRIPTION */
+.heroModelDescription--One {}
+
+/* CTAS */
+.heroModelCTAs--One {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* HERO--ONE-THREE- "VISION" MODEL */
+@media(min-width:60rem) {
+    .HeroModel--Vision #Hero--One, .HeroModel--Vision .heroIMG--One-Six{
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #HeroModel--One-Three .heroImgContent--One, .heroIMG--One-Six .heroImgContent--One-Six{
+        align-items: initial;
+        flex-direction: column;
+        grid-row: 1 / span 6;
+        margin: initial;
+        min-height: 100%;
+    }
+
+    #HeroModel--One-Three .HeroPerk {
+        text-align: start;
+        padding-left: 2rem;
+    }
+    #HeroModel--One-Six .HeroPerk {
+        text-align: end;
+        padding-right: 2rem;
+    }
+}
+
+
+
+
+
+/* MEDIUM SZS */
+@media(min-width: 40rem) and (max-width: 60rem) {
+
+    /* IMG & PERK */
+    .heroIMG--One-One,
+    .heroIMG--One-Two {
+        min-height: var(--heroHeight);
+    }
+
+    .heroModelContent--One {
+        max-height: calc(var(--heroModelContentHeight-One) + 10rem);
+    }
+
+    #Hero--One {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .heroImgContent--One {
+        grid-row: 3;
+        justify-content: space-evenly;
+        min-width: 60%;
+        max-height: 80%;
+        margin: 0 auto;
+        align-items: end;
+    }
+
+    /* BODY */
+    .heroModelContent--One {
+        display: grid;
+        /* grid-template-rows: repeat(5, 1fr); */
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        margin: auto;
+        padding: 3rem;
+
+    }
+
+    .heroModelHeader--One {
+        grid-column: 1;
+    }
+
+    .heroModelDescription--One {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+
+    }
+
+    .heroModelCTAs--One {
+        grid-row: 3 / span 1;
+        grid-column: span 1;
+        flex-direction: row;
+        max-width: 50%;
+    }
+
+    #HeroCtaBUTTON {
+        min-width: 100%;
+    }
+}
+
+/* BIG SCREENS */
+@media(min-width: 60rem) {
+    #Hero--One {
+        min-height: calc(var(--heroHeight) - 5vh);
+    }
+
+    #Hero--One {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .heroImgContent--One {
+        grid-row: 5;
+        justify-content: space-evenly;
+        min-width: 60%;
+        max-height: 80%;
+        margin: 0 auto;
+        align-items: end;
+
+    }
+
+    .heroModelContent--One {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-height: calc(var(--heroModelContentHeight-One) + 10vh);
+
+    }
+
+    .heroModelContent--One-Two {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-height: calc(var(--heroModelContentHeight-Two) + 10vh);
+    }
+
+    .heroModelHeader--One {
+        grid-row: 1;
+        grid-column: 2 / span 2;
+        padding-top: 1rem;
+    }
+
+    .heroModelDescription--One {
+        grid-row: 1 / span 3;
+        grid-column: 4 / span 4;
+        padding-top: 1rem;
+    }
+
+    .heroModelCTAs--One {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+    }
+}
+
+@media(min-width:70rem) {
+
+    .heroModelContent--One{
+        max-width: 80%;
+        margin: auto;
+    }
+    .heroModelCTAs--One {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heroModelCTAs--One #HeroCtaBUTTON {
+        min-width: 50%;
+    }
+
+    .heroModelCTAs--One .heroBtnCta {
+        min-width: 100%;
+    }
+}
+
+
+/* GAP FILLER BETWEEEN 
+HEROTYPEONE--TWO - GRID MODELS PAGE */
+#HeroModel--One-Two::after {
+    content: "";
+    background-color: black;
+    height: 100px;
+    min-width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+
+}
+
+
+
+/* 
+**MODEL 3 LOGOS 
+*/
+
+/*Hero Type One Perk Speedometer */
+#HeroModel--One-One .heroIMG--Model3-Model3 #Model3--HeroPerk-perkOne::before,
+#HeroModel--One-One .heroIMG--One-One .heroImgContent--One-One #ModelY--HeroPerk-perkTwo .heroPerkTitle::before
+{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-speedometer2" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>');
+    width:35px;
+    height: 35px;
+    position: absolute;
+    top: 5%;
+    left: -25%;
+    font-weight: 500;
+} 
+/* MODEL 3 TYPE ONE ID FOUR : CLOUDS  + MODEL Y TYPE ONE ID ONE */
+#HeroModel--One-Four .heroIMG--One-Four .heroImgContent--One-Four #Model3--HeroPerk-perkThree .heroPerkTitle,
+#HeroModel--One-One .heroIMG--One-One .heroImgContent--One-One #ModelY--HeroPerk-perkThree .heroPerkTitle
+{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cloud-sun" viewBox="0 0 16 16"><path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/><path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/></svg>');
+    width:65px;
+    height: 35px;
+    margin: auto;
+    font-weight: 500;
+} 
+/* VISION MODEL 3 */
+#HeroModel--One-Three.heroModel--Model3 .heroIMG--One-Three.heroIMG--Vision-Model3 #Vision--HeroPerk-perkThree .heroPerkTitle,
+#HeroModel--One-Three.heroModel--ModelS .heroIMG--One-Three.heroIMG--Vision-ModelS #Vision--HeroPerk-perkThree .heroPerkTitle,
+#HeroModel--One-Three.heroModel--ModelY .heroIMG--One-Three.heroIMG--Vision-ModelY #Vision--HeroPerk-perkThree .heroPerkTitle{
+    content: url('./images/model3/vision2svg.svg');
+    width: 40px;
+    height: 40px;
+    font-weight: 500;
+}
+@media (max-width: 50rem){
+    #HeroModel--One-Three.heroModel--Model3 .heroIMG--One-Three.heroIMG--Vision-Model3 #Vision--HeroPerk-perkThree .heroPerkTitle,
+    #HeroModel--One-One .heroIMG--One-One .heroImgContent--One-One #ModelY--HeroPerk-perkThree .heroPerkTitle
+    {
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+    
+    }
+}
+
+
+
+/* HERO TYPE VISION - Interior Model 3 */
+/* PERK TWO - WIFI LOGO*/
+.HeroModel--Vision.heroModel--Model3 .heroIMG--One-Six .heroImgContent--One #Vision--HeroPerk-perkTwo .heroPerkTitle::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-wifi" viewBox="0 0 16 16"><path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/><path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/></svg>');
+}
+/* PERK THREE - CAR LOGO */
+.HeroModel--Vision.heroModel--Model3 .heroIMG--One-Six .heroImgContent--One #Vision--HeroPerk-perkThree .heroPerkTitle::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-car-front" viewBox="0 0 16 16"><path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z"/><path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z"/></svg>');
+}
+
+
+/* PLUS LOGO FOR LEARN MORE CTA ON HERO MODEL3 TYPE ONE: SAFETY - PERFORMANCE */
+/* 
+**SAFETY
+*/
+
+.HeroModel--Safety.HeroModel--Safety.heroModel--SolarPanel .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary,
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary{
+    border-color: transparent;
+    width: 100%;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--secondary{
+    border-color: transparent;
+    width: 100%;
+    margin: 0;
+    gap: 0;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--SolarPanel .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary::before,
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    position: absolute;
+    top: 0;
+    transform: translate(-120%, 0%);
+    border-radius: 50%;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+/* HOVER ON PLUS ICON & PRIMARY CTA EFFECT MODEL3 - SOLAR PANEL*/
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary:hover,
+.HeroModel--Safety.HeroModel--Safety.heroModel--SolarPanel .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary:hover{
+    background-color: transparent;
+    color: #000;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary:hover::before,
+.HeroModel--Safety.HeroModel--Safety.heroModel--SolarPanel .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary:hover::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    background-color: black;
+    height: fit-content;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two{
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(1){
+    margin: 0;
+    width: 100%;
+}
+.HeroModel--Safety.HeroModel--Safety.heroModel--Model3 .heroModelContent--Two .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(2){
+    margin: 0;
+    width: 100%;
+}
+/* GRID ADJUSTMENTS */
+@media(min-width: 40rem) and (max-width:70rem){
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two{
+        grid-template-columns: repeat(10, 1fr);
+    }
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two .heroModelHeader--Two{
+        grid-column: 2 / span 5;
+    }
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two .heroModelDescription--Two{
+        grid-column: 5 / span 7;
+        grid-row: 2 span / 4;
+    }
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two .heroModelCTAs--Two{
+        grid-column: 2 / span 3;
+        display: flex;
+    }
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--primary{
+        min-width: 100%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    #HeroModel--Two-Two.HeroModel--Safety .heroModelContent--Two .heroModelCTAs--Two .heroBtnCta--secondary{
+        min-width: 100%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+/* 
+**PERFORMANCE
+*/
+
+#HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One .heroBtnCta--primary{
+    border-color: transparent;
+}
+#HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One .heroBtnCta--primary::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    position: absolute;
+    top: 0;
+    transform: translate(-120%, 0%);
+}
+@media(min-width:150rem){
+    #HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One .heroBtnCta--primary::before{
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+        position: absolute;
+        top: 0;
+        transform: translate(-200%, 0%);
+    }
+}
+/*
+**RANGE
+*/
+#HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two {
+    display: flex;
+    height: fit-content;
+    gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 1rem;
+
+}
+#HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two .heroBtnCta--primary{
+    margin: 0;
+    border-color: transparent;
+}
+#HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two .heroBtnCta--secondary{
+    margin: 0;
+}
+#HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(2){
+    margin: 0;
+}
+#HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two .heroBtnCta--primary::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    position: absolute;
+    top: 0;
+    transform: translate(-120%, 0%);
+}
+
+/* 
+** VISION - SIMILAR TO PERF HERO - ADD + LOGO TO CTA
+*/
+#HeroModel--One-Four.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One .heroBtnCta--primary{
+    border-color: transparent;
+}
+#HeroModel--One-Four.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One .heroBtnCta--primary::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    position: absolute;
+    top: 0;
+    transform: translate(-120%, 0%);
+}
+/* THIS CAN BE USED FOR HEROCTAS RANGE/SAFETY FOR FITTING BOTH CTAs 
+/*     
+content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-speedometer2" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>');
+    width:65px;
+    height: 35px;
+    position: absolute;
+    top: 5%;
+    left: -25%;
+    font-weight: 500;
+*/
+
+/* ADJUSTEMENT LAPTOP SCREENS GRID HERO TYPE 1 MODEL 3 */
+@media (min-width: 60rem) and (max-width: 80rem){
+    #HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One{
+    }
+    #HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two{
+        grid-column: 3 / span 3;
+    }
+}
+/* ADJUSTEMENT LAPTOP SCREENS GRID HERO TYPE 1 MODEL 3 HERO 2 PLUS ICON MOVE*/
+@media (min-width: 60rem) and (max-width: 80rem){
+    #HeroModel--One-Four.heroModel--One.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One .heroBtnCta--primary::before{
+        transform: translate(-200%, 0);
+    }
+}
+@media (min-width: 150rem){
+    #HeroModel--One-Four.heroModel--One.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One .heroBtnCta--primary::before{
+        transform: translate(-200%, 0);
+    }
+    #HeroModel--Two-One.HeroModel--Range.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two {
+        display: flex;
+        height: fit-content;
+        gap: 1rem;
+        justify-content:start;
+        width: 100%;
+        margin-left: 2rem;
+    
+    }
+}
+
+/*
+*
+** 
+***MODEL X CHANGES HERO TYPE ONE
+**
+*
+*/
+/* First Hero after Grid swap picture & content */
+/* IMG */
+@media (min-width: 70rem){
+    /*IMG*/
+    #HeroModel--Two-One.HeroModel--Range.heroModel--Two.heroModel--ModelX .heroIMG--Range-ModelX {
+        grid-column: 2 / span 4;
+    }
+    /*CONTENT*/
+    #HeroModel--Two-One.HeroModel--Range.heroModel--Two.heroModel--ModelX .heroModelContent--Two {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+
+/*
+*
+** 
+***SOLAR ROOF CHANGES HERO TYPE ONE
+**
+*
+*/
+/* Secondary BTN not displayed */
+#HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroCtaBUTTON:nth-child(2){
+    display: none;
+}
+
+@media(min-width: 60rem) and (max-width: 120rem){
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelHeader{
+        grid-column: 1 / span 4;
+    }
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelDescription{
+        grid-column: 5 / span 5;
+    }
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelCTAs{
+        grid-column: 1 / span 3;
+    }
+}
+
+@media (min-width: 125rem){
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelHeader{
+        grid-column: 1 / span 3;
+    }
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelDescription{
+        grid-column: 4 / span 5;
+    }
+    #HeroModel--One-One.HeroModel--Solar #HeroModelContent #HeroModelCTAs{
+        grid-column: 1 / span 3;
+    }
+}
+/*
+*
+** 
+***SOLAR PANELS CHANGES HERO TYPE ONE LOGO PLUS ICON
+**
+*
+*/
+@media(min-width:80rem){
+    #HeroModel--Two-Two.heroModel--SolarPanel .heroModelContent--Two-Two .heroModelCTAs--Two{
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #HeroModel--Two-Two.heroModel--SolarPanel .heroModelContent--Two-Two .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(1){
+        width: 50%;
+        display: flex;
+        height: fit-content;
+    }
+    #HeroModel--Two-Two.heroModel--SolarPanel .heroModelContent--Two-Two .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(2){
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/* RESIZE VIDEO FOR HERO TYPE ONE */
+#HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel{
+    min-height: auto;
+    max-height: fit-content;
+}
+#HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One {
+    max-height: 100%;
+    min-height: initial !important;
+}
+#HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos {
+    height: 50% !important;
+}
+#HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos video{
+
+}
+
+@media(min-width: 60rem){
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One {
+        max-height: 100vh;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroModelContent--Two-One{
+        max-height: 100vh;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos{
+        max-height: 100vh;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos video{
+        max-height: 100vh;
+    }
+}
+
+@media (min-width: 120rem){
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel{
+        min-height: 100vh;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos {
+        height: 100% !important;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroIMG--Two-One #HeroVIDEO  #myVideos video{
+        min-height: 100vh;
+    }
+    #HeroModel--Two-One.HeroModelTwo--One.heroModel--SolarPanel .heroModelContent--Two{
+        grid-template-rows: repeat(9, 1fr);
+        height: 90%;
+    }
+    
+}

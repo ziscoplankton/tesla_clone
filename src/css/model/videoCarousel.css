@@ -1,0 +1,99 @@
+#videoCarousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #000;
+}
+  
+#myVideos {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 70% !important;
+    background-color: black;
+    flex-grow: 1;}
+
+
+#pillsVideo {
+    display: flex;
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#videoContent {
+    flex-grow: 1;
+    color: #FFF;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    height:10%;    
+    margin-bottom: 2rem !important;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#videoContent h3 {
+    font-size: .85rem;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+#videoContent p {
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+
+/* Query Small Screen Grid Bigger / Less Cols/Rows */
+@media screen and (max-width: 768px) and (max-height: 1024px){
+    #pillsVideo, #videoContent{
+        width: 100%;
+    }
+
+}
+
+
+/* PHONE SZ MD-LG SCREENS */
+@media screen and (max-width: 500px) and (max-height: 900px){
+    #pillsVideo, #videoContent{
+        width: 100%
+    }
+}
+
+
+/* PHONE SZ SM SCREENS */
+@media screen and (max-width: 500px) and (max-height: 600px){
+    #pillsVideo, #videoContent{
+        width: 100%;
+    }
+}
+
+/* QUICK FIX ON VIDEO HEIGHT HERO TYPE TWO RANGE */
+@media (min-width: 70rem){
+    #HeroModel--Two-One.HeroModel--Range.HeroModelTwo--One {
+        position: relative;
+        max-height: 100vh;
+    }
+    #Hero--Two.heroIMG--Two-One.heroIMG--Range-ModelS{
+        height: 500px;
+        position: relative;
+    }
+    #myVideos video{
+        /* max-height: 500px; */
+    }
+    /* ADJUST HERO PERKS ON VIDEO TO LOWER */
+
+    /* MODEL Y */
+    #HeroModel--Two-One .heroIMG--Range-ModelY .heroImgContent--Two {
+        top: 80%;
+    }
+    /* MODEL S */
+    #HeroModel--Two-One .heroIMG--Range-ModelS .heroImgContent--Two {
+        top: 150%;
+    }
+}

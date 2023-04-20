@@ -1,0 +1,178 @@
+#section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#section #header {
+    margin-top: 4rem;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 5s ease-in-out;
+}
+
+#section #header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: paraAppear 1s 1s forwards;
+    transition: headerAppear cubic-bezier(0.77, 0, 0.175, 1) .7s;
+}
+
+#section #header.animate{
+    animation: headerAppear 1s forwards;
+    transition: headerAppear cubic-bezier(0.77, 0, 0.175, 1) .7s;
+}
+
+@keyframes headerAppear {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+
+    }
+}
+
+#section #header.remove {
+    animation-name: headerDisappear;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+@keyframes headerDisappear {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+
+#section #header #para {
+    animation: paraAppear 1s 2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: paraAppear cubic-bezier(0.77, 0, 0.175, 1) .7s;
+}
+
+@keyframes paraAppear {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#section > #cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+#section > #cta.animate {
+    animation: headerAppear 1s forwards;
+    transition: headerAppear cubic-bezier(0.77, 0, 0.175, 1) .7s;
+}
+
+#section > #cta.remove {
+    animation-name: headerDisappear;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#section.model3 {
+    background: url('./images/model3.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.modelY {
+    background-image: url('./images/modely.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.modelS {
+    background-image: url('./images/models.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.modelX {
+    background-image: url('./images/modelx.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.solarPanels {
+    background-image: url('./images/solarpanel.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.solarRoof {
+    background-image: url('./images/solarroof.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#section.accessories {
+    background-image: url('./images/acc.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #5c5e62;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+    letter-spacing: .5px;
+}
+
+footer ul li:nth-child(6), footer ul li:nth-child(7){
+    display: none;
+}
+
+@media(min-width:600px) {
+    #section > #cta {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn--primary, .btn--secondary {
+        width: 250px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    footer ul{
+        display: flex;
+        padding-bottom: 1rem;
+    }
+    footer ul li:nth-child(6), footer ul li:nth-child(7){
+        display: block;
+    }
+}

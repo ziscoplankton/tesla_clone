@@ -1,0 +1,39 @@
+#Interior{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#Interior--1 {
+    background-image: var(--interior-image);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}  
+
+
+#headerInterior {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+#headerInteriorText{
+    opacity: 0;
+}
+#headerInterior::after{
+    content: "";
+    height: 50px;
+    width: 200%;
+    background-color: black;
+    position: absolute;
+    top: 96%;
+    z-index: 9;
+    filter: blur(25px);
+}

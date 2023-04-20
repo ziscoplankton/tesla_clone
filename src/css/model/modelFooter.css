@@ -1,0 +1,350 @@
+
+/* CTAs STYLES */
+#ModelTipsCTAs #HeroModelCTAs .heroBtnCta--primary{
+    color: #000;
+    background-color: transparent;
+    border: 3px black solid;
+}
+#ModelTipsCTAs #HeroModelCTAs .heroBtnCta--secondary{
+    color: #000;
+    background-color: var(--heroOne-secondaryBtnBg);
+    color: (--color-secondary);
+    border: 3px transparent solid;
+}
+
+/* HOVER STATES */
+#ModelTipsCTAs #HeroModelCTAs .heroBtnCta--primary:hover{
+    background-color: #000;
+    color: #FFF;
+}
+#ModelTipsCTAs #HeroModelCTAs .heroBtnCta--secondary:hover{
+    background-color: var(--modelBtnFont-secondary);
+
+}
+
+
+#ModelTipsCTAs #HeroCtaBUTTON:nth-child(2) {
+    margin-top: 1rem;
+}
+
+
+/* SETUPS */
+#ModelTips {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    /* border: 5px hotpink solid; */
+    text-align: center;
+}
+/* IMG */
+#ModelTipsImg {
+    /* border: 5px red solid; */
+    background-image: var(--ModelTipsImg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-height: 50vh;
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 2;
+}
+/* TITLE */
+#ModelTipsTitle{
+    /* border: 5px blue solid; */
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#ModelTipsTitle div {
+}
+/* CTAs */
+#ModelTipsCTAs{
+    /* border: 5px green solid; */
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+/* BODY */
+#ModelTipsContent{
+    /* border: 5px yellow solid; */
+    color: var(--tablePerk-secondary);
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+
+#ModelTipsFooter{
+    /* border: 5px aqua solid; */
+    text-align: center;
+    grid-row: 6;
+    grid-column: 1 / span 2;
+}
+
+#ModelTipsFooter ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    white-space: nowrap;
+    color: var(--tablePerk-secondary);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+
+
+@media (min-width: 40rem){
+    /* SETUPS */
+    #ModelTipsTitle{
+        text-align: start;
+    }
+    #ModelTips {
+        max-height: 100vh;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(9, 1fr);
+        gap: 1rem;
+    }
+    /* IMG */
+    #ModelTipsImg {
+        /* border: 5px red solid; */
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-height: 50vh;
+        grid-row: 2 / span 10;
+        grid-column: 6 / span 4;
+}
+    /* TITLE */
+    #ModelTipsTitle{
+        grid-row: 4 / span 1;
+        grid-column: 2/ span 2;
+    }
+    /* CTAs */
+    #ModelTipsCTAs{
+        grid-row: 5;
+        grid-column: 2/ span 2;
+    }
+
+    /* BODY */
+    #ModelTipsContent{
+        grid-row: 9;
+        grid-column: 3 / span 5;
+    }
+
+    #ModelTipsFooter{
+        grid-row: 10;
+        grid-column: 3 / span 5;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    #ModelTipsFooter ul{
+        flex-direction: row;
+    }
+
+
+
+
+}
+
+@media (min-width: 70rem){
+    /* GRID ADJUSTEMENT */
+    #ModelTipsTitle{
+        grid-row: 5;
+        grid-column: 3 / span 2;
+    }
+    #ModelTipsImg{
+        grid-row: 3 / span 7;
+    }
+    #ModelTipsContent{
+        grid-row: 10;
+    }
+    #ModelTipsFooter{
+        grid-row: -1;
+        margin-bottom: 1rem;
+    }
+    #ModelTipsCTAs{
+        grid-row: 6;
+        grid-column: 3 / span 2 ;
+    }
+
+
+    /* GENERAL CHANGES */
+    #ModelTipsCTAs #HeroModelCTAs {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #ModelTipsCTAs #HeroModelCTAs #HeroCtaBUTTON {
+        width: 100%;
+    }
+    #ModelTipsCTAs #HeroCtaBUTTON:nth-child(2) {
+        margin-top: 0rem;
+    }
+    
+
+}
+
+
+/* FOOTER SOLARS */
+#ModelTips.modelTips--One-Solar-Roof {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+/*IMG*/
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsImg{
+    display: none;
+}
+
+/* TITLE */
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsTitle{
+    color: white;
+    text-align: center;
+    grid-row: 3;
+}
+
+/* CTAs */
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs{
+    color: #FFF;
+    grid-row: 4;
+    margin: auto;
+}
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs #HeroModelCTAs{
+    flex-direction: column;
+}
+/*PRIMARY + HOVER */
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs #HeroModelCTAs #HeroCtaBUTTON .heroBtnCta--primary{
+    border-color: white;
+    color: #FFF;
+}
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs #HeroModelCTAs #HeroCtaBUTTON .heroBtnCta--primary:hover{
+    background-color: #FFF;
+    color: #000;
+}
+/*SECONDARY + HOVER */
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs #HeroModelCTAs #HeroCtaBUTTON .heroBtnCta--secondary{
+    color: #FFF;
+    background-color: var(--modelBtnBg-secondary);
+    padding: .7rem .5rem;
+}
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs #HeroModelCTAs #HeroCtaBUTTON .heroBtnCta--secondary:hover{
+    color: #FFF;
+    background-color: var(--modelBtnBg-secondaryHover);
+}
+
+
+/* CONTENT */
+#ModelTips.modelTips--One-Solar-Roof  #ModelTipsContent{
+    color: #FFF;
+    grid-row: 5;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+/* FOOTER */
+#ModelTips.modelTips--One-Solar-Roof #ModelTipsFooter{
+    color: #FFF;
+    grid-row: 6;
+}
+
+/*LAPTOP / TABLET */
+@media(min-width:40rem){
+    #ModelTips.modelTips--One-Solar-Roof {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsTitle{
+        color: white;
+        text-align: center;
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs{
+        color: #FFF;
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+    #ModelTips.modelTips--One-Solar-Roof  #ModelTipsContent{
+        color: #FFF;
+        grid-column: 2 / span 2;
+        grid-row: 6;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsFooter{
+        color: #FFF;
+        grid-column: 1 / span 4;
+    }
+}
+
+/* LAPTOP LRG */
+@media(min-width:70rem){
+    #ModelTips.modelTips--One-Solar-Roof {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsTitle{
+        color: white;
+        text-align: center;
+        grid-column: 3 / span 2;
+        grid-row: 4;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs{
+        color: #FFF;
+        grid-column: 3 / span 2;
+        grid-row: 5;
+    }
+    #ModelTips.modelTips--One-Solar-Roof  #ModelTipsContent{
+        color: #FFF;
+        grid-column: 3 / span 2;
+        grid-row: 6;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsFooter{
+        color: #FFF;
+        grid-column: 1 / span 6;
+        grid-row: 10;
+    }
+}
+
+/* 4k 2550+ width */
+@media(min-width:100rem){
+    #ModelTips.modelTips--One-Solar-Roof {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsTitle{
+        color: white;
+        text-align: center;
+        grid-column: 4 / span 2;
+        grid-row: 4;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsCTAs{
+        color: #FFF;
+        grid-column: 4 / span 2;
+        grid-row: 5;
+    }
+    #ModelTips.modelTips--One-Solar-Roof  #ModelTipsContent{
+        color: #FFF;
+        grid-column: 4 / span 2;
+        grid-row: 6;
+    }
+    #ModelTips.modelTips--One-Solar-Roof #ModelTipsFooter{
+        color: #FFF;
+        grid-column: 1 / span 8;
+    }
+}

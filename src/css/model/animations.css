@@ -1,0 +1,115 @@
+
+
+/**
+*
+* ANIMATIONS, PERKS CONTENT & CTAS
+*
+**/
+
+/*SETUPS*/
+#HeroModelContent{
+    opacity: 0;
+}
+
+/* PERKS & FOOTER (CTAs) */
+.animate {
+    animation: animatePerk 1s forwards;
+}
+@keyframes animatePerk {
+    from{ 
+        opacity: 0;
+        transform: translateY(50%);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate:nth-child(1){
+    animation-delay: .2s;
+}
+.animate:nth-child(2){
+    animation-delay: .4s;
+}
+.animate:nth-child(3){
+    animation-delay: .6s;
+}
+.animate:nth-child(4), #ModelFooter.animate{
+    animation-delay: .8s;
+}
+
+.enter {
+    animation: enter 2s forwards;
+}
+@keyframes enter {
+    from{
+        transform: translateY(100%);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exit {
+    animation: exit 1s forwards;
+}
+@keyframes exit{
+    from{
+        transform: translateY(0);
+    }to {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+}
+
+
+/* Points for "Safety" Hero Adjustements */
+#pointOne.animate, #pointTwo.animate {
+    animation: justAppear 2s forwards;
+}
+@keyframes justAppear {
+    from{
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+#pointOne.animate::before{
+    animation: pointBigGrowUp 2s forwards;
+}
+@keyframes pointBigGrowUp {
+    from{
+        height: 0px;
+        opacity: 0;
+    }to {
+        height: 150px;
+        opacity: 1;
+    }
+}
+#pointTwo.animate::before{
+    animation: pointGrowUp 2s forwards;
+}
+@keyframes pointGrowUp {
+    from{
+        height: 0px;
+        opacity: 0;
+    }to {
+        height: 100px;
+        opacity: 1;
+    }
+}
+
+/* ANIMATION MODEL 3: higher transformations */
+@keyframes pointEntryModel3{
+    from{
+        height: 0;
+    }to {
+        height: 120px;
+    }
+}
+@keyframes pointEntryModel3Big{
+    from{
+        height: 0;
+    }to {
+        height: 200px;
+    }
+}

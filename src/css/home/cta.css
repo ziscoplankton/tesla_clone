@@ -1,0 +1,70 @@
+.btn {
+    display: block;
+    backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem 0 1rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn--primary {
+    background-color: rgba(23, 26, 32, 0.8);
+    color: #FFF;
+    padding: .8em 2rem;
+    opacity: 0;
+}
+
+.btn--secondary {
+    background-color: rgba(244, 244, 244, 0.65);
+    color: #393C41;
+    padding: .8em 2rem;
+    opacity: 0;
+}
+
+.btn--secondary, .btn--primary {
+    animation: appearBottom 1s 2s forwards;
+}
+
+.btn--primary.sideAnim {
+    opacity: 0;
+    animation: appearSideLeft 1s 2s forwards;
+}
+
+.btn--secondary.sideAnim{
+    opacity: 0;
+    animation: appearSideRight 1s 2s forwards;
+}
+
+@keyframes appearBottom {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes appearSideLeft {
+    from{
+        transform: translateX(-20%);
+        opacity: 0;
+    }to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes appearSideRight {
+    from{
+        transform: translateX(20%);
+        opacity: 0;
+    }to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.btn--primary.accessories {
+    background-color: rgba(23, 26, 32, 1);
+}

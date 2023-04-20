@@ -1,0 +1,213 @@
+.heroCarousel {
+    position: relative;
+}
+
+
+.heroCarouselMedia {
+    display: flex;
+}
+#HeroCarouselImage:nth-child(2){
+    position: absolute;
+}
+
+
+.heroCarouselTables {
+    display: flex;
+}
+
+#HeroTable{
+}
+
+
+
+/* HeroCarousel Video First one is on SolarRoof page */
+
+
+/* REMOVE width & height from ReactPlayer */
+.heroDetails---Two--ModelVideo-SolarRoof #HeroD__container #HeroDetailsCarousel #heroVideo--Two-SolarRoof div{
+    width: unset !important;
+    height: unset !important;
+}
+
+
+
+
+
+
+
+.heroDetails---Two--ModelVideo-SolarRoof {
+    border: 10px red solid;
+}
+
+.heroDetails---Two--ModelVideo-SolarRoof .heroDetailsContent---Two--ModelVideo-SolarRoof{
+    border: 10px red solid;
+    padding: 0 1rem !important;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroCarousel--ModelVideo-SolarRoof{
+    border: 10px aqua solid;
+}
+
+.heroDetails---Two--ModelVideo-SolarRoof #heroVideo--Two-SolarRoof:nth-child(1){
+    border: 10px lime solid;
+    opacity: 0;
+}
+.heroDetails---Two--ModelVideo-SolarRoof #heroVideo--Two-SolarRoof:nth-child(2){
+    border: 10px hotpink solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.heroDetails---Two--ModelVideo-SolarRoof #heroVideo--Two-SolarRoof:nth-child(3){
+    border: 10px purple solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.heroDetails---Two--ModelVideo-SolarRoof #heroVideo--Two-SolarRoof.active{
+    animation: videoEnter 1s forwards;
+}
+@keyframes videoEnter {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.heroDetails---Two--ModelVideo-SolarRoof #heroVideo--Two-SolarRoof.notActive{
+    animation: videoLeave 1s forwards;
+}
+@keyframes videoLeave {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+
+    }
+}
+
+
+/* .heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof{
+    border: 10px green solid;
+    display: flex;
+    gap: 1rem;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo{
+    border: 5px black solid;
+    min-width: 65%;
+    transition: all .5s ease-in-out;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo.active{
+    border: 5px black solid;
+    color: red;
+} */
+/* 1ST CONTENT  */
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(1){
+    border: 5px blue solid;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(1).active{
+    border: 5px blue solid;
+}
+/* 2nd CONTENT  */
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(2){
+    border: 5px blue solid;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(2).active{
+    border: 5px blue solid;
+
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(2).active  .heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(1){
+    border: 5px red solid;
+
+}
+
+/* 3ST CONTENT  */
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(3){
+    border: 5px blue solid;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo:nth-child(3).active{
+
+}
+
+
+
+
+
+
+
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof .tableVideo0.active + .tableVideo1  {
+    color: red;
+}
+
+
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof .tableVideo0 + .heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof .tableVideo1.active {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heroTables--ModelVideo-SolarRoof {
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+
+#HeroTableDetailsVideo {
+border: 5px black solid;
+min-width: 65%;
+transition: transform 0.5s ease-in-out;
+}
+
+#HeroTableDetailsVideo.active {
+border-color: red;
+}
+
+/* Move left */
+/* #HeroTableDetailsVideo:not(.active) + #HeroTableDetailsVideo.active {
+transform: translateX(-0%);
+} */
+
+/* Move right */
+/* #HeroTableDetailsVideo.active + #HeroTableDetailsVideo:not(.active) + #HeroTableDetailsVideo:not(.active){
+transform: translateX(0%);
+}
+
+#HeroTableDetailsVideo.active ~ #HeroTableDetailsVideo:not(.active) {
+    transform: translateX(25%);
+} */
+    
+    
+
+
+
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo #HeroTableHead h5{
+    border: 1px black solid;
+    width: fit-content;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroTables--ModelVideo-SolarRoof #HeroTableDetailsVideo #HeroTableHead p{
+    border: 1px black solid;
+    width: fit-content;
+}
+.heroDetails---Two--ModelVideo-SolarRoof .heroDetailsFooter---Two--ModelVideo-SolarRoof{
+    border: 5px yellow solid;
+}

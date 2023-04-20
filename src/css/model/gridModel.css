@@ -1,0 +1,210 @@
+/* SETUP */
+#gridModel {
+    overflow: hidden;
+    background-color: #000;
+    color: #FFF;
+    padding: 5% 10%;
+}
+
+/* FLEX SET UP */
+#gridChild {
+    display: flex;
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+#gridChild:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+
+#gridChild #gridContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#gridChild #gridContent h4,
+#gridChild #gridContent p {
+    width: 50%;
+}
+
+#gridContent h4 {
+    margin-bottom: 1rem;
+    ;
+
+}
+
+#gridContent p {}
+
+/* IMAGES */
+
+#gridImage img {
+
+    background-position: center;
+}
+
+#gridChild:nth-child(1) #gridImage {
+    width: 50%;
+}
+
+#gridChild:nth-child(1) #gridImage img {
+    width: 80%;
+}
+
+#gridChild:nth-child(2) #gridImage {
+    width: 50%;
+}
+
+#gridChild:nth-child(2) #gridImage img {
+    width: 80%;
+}
+
+#gridChild:nth-child(3) #gridImage {
+    width: 50%;
+}
+
+#gridChild:nth-child(3) #gridImage img {
+    width: 80%;
+}
+
+
+
+
+
+
+
+/* VIDEO */
+#gridChild:nth-child(2) #gridImage {
+    width: 50%;
+
+}
+
+#gridImage #gridTwoVideo {
+    width: 80% !important;
+    height: 100% !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Query Small Screen Grid Bigger / Less Cols/Rows */
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+
+    #gridModel {
+        padding: 0;
+    }
+
+    #gridChild {
+        display: block;
+    }
+
+    #gridContent {
+        display: block;
+        padding: 5%;
+    }
+
+    #gridChild #gridContent h4,
+    #gridChild #gridContent p {
+        width: 100%;
+    }
+
+    #gridChild #gridImage {
+        width: 100% !important;
+    }
+
+    #gridChild #gridImage img,
+    #gridChild #gridImage #gridTwoVideo {
+        width: 100% !important;
+    }
+
+    #gridChild #gridContent {
+        width: 100%;
+    }
+
+}
+
+
+/* PHONE SZ MD-LG SCREENS */
+@media screen and (max-width: 500px) and (max-height: 900px) {
+    #gridModel {
+        padding: 0;
+    }
+
+    #gridChild {
+        display: block;
+    }
+
+    #gridContent {
+        display: block;
+        padding: 5%;
+
+    }
+
+    #gridChild #gridContent h4,
+    #gridChild #gridContent p {
+        width: 100%;
+    }
+
+    #gridChild #gridImage {
+        width: 100% !important;
+    }
+
+    #gridChild #gridImage img,
+    #gridChild #gridImage #gridTwoVideo {
+        width: 100% !important;
+    }
+
+    #gridChild #gridContent {
+        width: 100%;
+    }
+
+}
+
+
+/* PHONE SZ SM SCREENS */
+@media screen and (max-width: 500px) and (max-height: 600px) {
+    #gridModel {
+        padding: 0;
+    }
+
+    #gridChild {
+        display: block;
+    }
+
+    #gridContent {
+        display: block;
+        padding: 5%;
+
+    }
+
+    #gridChild #gridContent h4,
+    #gridChild #gridContent p {
+        width: 100%;
+    }
+
+    #gridChild #gridImage {
+        width: 100% !important;
+    }
+
+    #gridChild #gridImage img,
+    #gridChild #gridImage #gridTwoVideo {
+        width: 100% !important;
+    }
+
+    #gridChild #gridContent {
+        width: 100%;
+    }
+
+}

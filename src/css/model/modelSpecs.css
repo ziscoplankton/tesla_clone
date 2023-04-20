@@ -1,0 +1,271 @@
+
+#ModelSpecsMain {
+    height: fit-content !important;
+    background-color: var(--mainBgColor);
+    color: var(--mainFontColor);
+    min-height: 100vh;
+}
+
+#SpecsImgDiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 74%;
+}
+
+#ModelSpecsIMG {
+    width: 100%;
+}
+
+#SpecsHeader{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#SpecsSpanHeader{
+    font-weight: 400;
+}
+
+#SpecsTablesCtas{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+
+#SpecsBtn{
+    border: 2px var(--btnCTA-bgBlack) solid;
+    border-radius: 5px;
+    color: var(--grey);
+    width: 50%;
+    text-align: center;
+    padding: .3rem 0;
+    font-size: .9rem;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SpecsBtn.active{
+    border-color: #FFF !important;
+    color: #FFF !important;
+    font-weight: 500;
+}
+
+#TablesFromSpecs{
+    display: flex;
+    background-color: var(--mainBgColor);
+    height: 475px;
+}
+
+#SpecsTables{
+    transform: translateY(5%);
+    opacity: 0;
+}
+
+#SpecsTables.aPPear{
+    animation: aPPear 1.5s forwards;
+    transition: all 300ms ease-in-out;
+}
+@keyframes aPPear {
+    from{
+        opacity: 0;
+        transform: translateY(5%)
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#SpecsTable0{
+    display: none;
+}
+#SpecsTablePerk0, #SpecsTablePerk1, #SpecsTablePerk2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 1rem
+}
+
+#perkyTitle{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#perkyDetails{
+    font-size: .9rem;
+}
+
+.perky0, .perky1, .perky2{
+    padding: 0rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.perky0::before{
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: var(--beforeElement);
+    position: absolute;
+    top: -20%;
+}
+.perky1::before {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: var(--beforeElement);
+    position: absolute;
+    top: -30%;
+
+}
+.perky2::before {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: var(--beforeElement);
+    position: absolute;
+    top: -30%;
+
+}
+
+#perkyAsterix{
+    font-style: italic;
+    font-size: .9rem;
+}
+
+#SpecsTable0.active{
+    display: block;
+    width: 100%;
+}
+#SpecsTable1, #SpecsTable2{
+    display: none;
+    width: 100%;
+
+}
+#SpecsTable1.active, #SpecsTable2.active{
+    display: block;
+
+}
+
+#SpecsFooter{
+    padding: 0;
+    background-color: var(--mainBgColor);
+    padding: 1rem;
+}
+
+#SpecsFooter #HeroModelCTAs .heroBtnCta--secondary-Two.black{
+    border: 3px white solid;
+    background-color: transparent;
+
+}
+
+#SpecsFooter #HeroModelCTAs .heroBtnCta--secondary-Two.black:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+@media(min-width:701px){
+    #ModelSpecsMain{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,1 fr);
+        column-gap: 7rem; 
+    }
+    #SpecsImgDiv {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #ModelSpecsIMG {
+        width: 70%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    #SpecsTables{
+        width: 80%;
+        padding-left: .7rem;
+    }
+
+    #SpecsHeader{
+        font-size: 1.7rem;
+        padding: 0;
+        padding: 1rem 0;
+    }
+    #SpecsTablesCtas{
+        padding: 0;
+        gap: 0.3rem;
+        margin-bottom: 1.5rem
+    }
+    #SpecsBtn {
+        font-size: .8rem;
+        border: 1.5px var(--btnCTA-bgBlack) solid;
+        transition: none;
+        padding: .4rem 0;
+    }
+    #SpecsTablePerk0{
+        padding: 0;
+    }
+    .perky0 {
+        padding: 0;
+    }
+    #SpecsFooter{
+        width: 100%;
+        height: 120px;
+
+    }
+    #SpecsFooter #HeroModelCTAs{
+        background-color: black;
+        top: 100%;
+        left: 100%;
+        width: 200px;
+        height: fit-content;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+}
+
+@media (min-width: 60rem){
+    #ModelSpecsIMG{
+        height: 70%;
+        width: 80%;
+    }
+}
+
+
+/* MODEL SPECS SOLAR PANELS + POWER WALL */
+
+#ModelSpecs--One.modelSpecs--Solar-Roof-One{
+}
+
+#ModelSpecs--One.modelSpecs--Solar-Roof-One #ModelSpecsMain{
+}
+#ModelSpecs--One.modelSpecs--Power-Wall-One #ModelSpecsMain #SpecsImgDiv,
+#ModelSpecs--One.modelSpecs--Solar-Roof-One #ModelSpecsMain #SpecsImgDiv{
+    grid-row: 1 / span 3;
+}
+#ModelSpecs--One.modelSpecs--Power-Wall-One #ModelSpecsMain #SpecsTables,
+#ModelSpecs--One.modelSpecs--Solar-Roof-One #ModelSpecsMain #SpecsTables{
+    height: 100% !important;
+    grid-row: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+/* REMOVE CTAs */
+#ModelSpecs--One.modelSpecs--Power-Wall-One #ModelSpecsMain #SpecsFooter,
+#ModelSpecs--One.modelSpecs--Solar-Roof-One #ModelSpecsMain #SpecsFooter{
+    display: none;
+}
+#ModelSpecs--One.modelSpecs--Solar-Roof-One #ModelSpecsMain #SpecsTables #SpecsTablesCtas{
+    display: none;
+}

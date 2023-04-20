@@ -1,0 +1,32 @@
+
+.modelBtnCta--primary {
+    color: #FFF;
+    background-color: transparent;
+    border: .25rem #FFF solid;
+    padding: .7rem 0;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modelBtnCta--secondary {
+    background-color: var(--modelBtnBg-secondary);
+    color: var(--modelBtnFont-secondary);
+    border: .25rem transparent solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.modelBtnCta--primary:hover{
+    background-color: #FFF;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.modelBtnCta--secondary:hover{
+    background-color: var(--modelBtnBg-secondaryHover);
+    cursor: pointer;
+}

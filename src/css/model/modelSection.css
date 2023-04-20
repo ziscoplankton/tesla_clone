@@ -1,0 +1,334 @@
+/** LOAD ASSETS / SECTION **/
+#sectionModel {
+    height: 100vh;
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+}
+
+/*GRID SETUP sectionModel */
+#ModelHeader {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+}
+#ModelBody {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+
+}
+#ModelPerfs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#PerkFour {
+    display: none;
+}
+#ModelFooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    opacity: 0;
+}
+#ModelFooter .modelBtnCta--primary,
+#ModelFooter .modelBtnCta--secondary {
+    grid-column: 1 / span 2;
+}
+#ModelFooter .modelBtnCta--secondary {
+    padding: .5rem 0;
+}
+
+
+/* TABLET SML LAPTOP */
+@media (min-width:40rem) {
+    #sectionModel #ModelFooter {
+        grid-template-rows: repeat(1, 1fr);
+    }
+    #ModelFooter .modelBtnCta--primary{
+    grid-column: 1;
+    grid-row: 1;
+    }
+    #ModelFooter .modelBtnCta--secondary {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+/* MD LAPTOP */
+@media (min-width: 60rem){
+    #PerkFour{
+        display: block;
+    }
+    #sectionModel {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    #ModelHeader {
+        grid-row: 2;
+        grid-column: 3 / span 2;
+    }
+    #ModelBody {
+        grid-column: 2 / span 4;
+        grid-row: 6 / span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
+    #ModelPerfs {
+        display: flex;
+        justify-content: space-between;
+    }
+    #ModelFooter{
+        width: 80%;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 80rem){
+    #sectionModel {
+    }
+
+    #ModelFooter{
+        width: 50%;
+    }
+    #ModelPerfs{
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Perk Hero Classes STYLES*/
+#ModelHeader {
+    text-align: center;
+}
+
+#ModelHeader h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+#ModelHeader p{
+    font-weight: 500;
+}
+
+
+#ModelPerfs{
+    color: #FFF;
+    text-align: center;
+}
+
+/* CTAs */
+.perk {
+    opacity: 0;
+}
+.perk .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+
+.perk .details{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+/* BLUR ON AFTER SECTION*/
+#sectionModel.ModelS::after{
+    content: "";
+    height: 100px;
+    width: 200%;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: -2%;
+    filter: blur(30px);
+}
+#sectionModel.ModelS #ModelBody{
+    z-index: 1;
+}
+
+
+
+
+
+/**
+*
+* MODEL 3
+*
+**/
+/* MODEL 3 PERKS ADJUSTEMENTS FOR GRID DISPLAY */
+/* #sectionModel.Model3 #PerkOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+@media(min-width: 60rem){
+/* MODEL 3 LOGOS  ON PERKS ADJUSTMENTS BIG SCREENS FROM IPAD PRO*/
+    
+    #sectionModel.ModelY,
+    #sectionModel.Model3 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #sectionModel.ModelY #ModelHeader {
+        grid-column: 3;
+    }
+    #sectionModel.Model3 #ModelHeader{
+        grid-column: 2 / span 3;
+
+    }
+    #sectionModel.ModelY #ModelBody,
+    #sectionModel.Model3 #ModelBody{
+        grid-column: 2 / span 3;
+    }
+    #sectionModel.ModelY #ModelPerfs, 
+    #sectionModel.Model3 #ModelPerfs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #sectionModel.Model3 #PerkOne{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* MODEL 3 LOGOS */
+    /* LOGO PERK :
+    * - modelSection
+    * - Hero 
+    */
+    #sectionModel.Model3 #PerkOne::before {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-speedometer2" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>');
+        width:35px;
+        height: 35px;
+        top: 0%;
+        left: 25%;
+        font-weight: 500;
+    }  
+}
+
+
+
+
+
+/* 
+**
+***SOLAR ROOF STYLE CHANGES CTAS on RIGHT SIDE - ONLY ONE CTA 
+**
+*
+*/
+/* TABLETS */
+@media(min-width:40rem){
+    #sectionModel.Powerwall #ModelFooter,
+    #sectionModel.SolarRoof #ModelFooter, 
+    #sectionModel.SolarPanels #ModelFooter {
+        grid-column: 1 / span 1;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #sectionModel.Powerwall #ModelFooter .modelBtnCta--primary,
+    #sectionModel.SolarRoof #ModelFooter .modelBtnCta--primary,
+    #sectionModel.SolarPanels #ModelFooter .modelBtnCta--primary{
+        width: 100%;
+    }
+}
+/* LAPTOP */
+@media(min-width: 60rem){
+    #sectionModel.Powerwall #ModelBody,
+    #sectionModel.SolarRoof #ModelBody,
+    #sectionModel.SolarPanels #ModelBody{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    #sectionModel.Powerwall #ModelPerfs,
+    #sectionModel.SolarRoof #ModelPerfs,
+    #sectionModel.SolarPanels #ModelPerfs{
+        grid-column: 1 / span 3;
+    }
+    #sectionModel.Powerwall #ModelFooter,
+    #sectionModel.SolarRoof #ModelFooter,
+    #sectionModel.SolarPanels #ModelFooter  {
+        grid-column: 4;
+        padding: 0;
+        width: 100%;
+    }
+    #sectionModel.Powerwall .modelBtnCta--primary,
+    #sectionModel.SolarRoof .modelBtnCta--primary,
+    #sectionModel.SolarPanels .modelBtnCta--primary{
+        width: 100% !important;
+    }
+}
+
+
+/* 4k */
+@media (min-width: 160rem){
+    #sectionModel.Powerwall,
+    #sectionModel.SolarRoof,
+    #sectionModel.SolarPanels  {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #sectionModel.Powerwall #ModelHeader,
+    #sectionModel.SolarPanels #ModelHeader,
+    #sectionModel.SolarRoof #ModelHeader{
+        grid-column: 2 / span 3;
+    }
+    #sectionModel.Powerwall #ModelBody,
+    #sectionModel.SolarRoof #ModelBody,
+    #sectionModel.SolarPanels #ModelBody{
+        grid-column: 2 / span 3;
+    }
+}
+
+/* SOLAR ROOF LOGO */
+
+#sectionModel.Powerwall #ModelPerfs #PerkThree .title,
+#sectionModel.Powerwall #ModelPerfs #PerkOne .title,
+#sectionModel.SolarRoof #ModelPerfs #PerkOne .title,
+#sectionModel.SolarPanels #ModelPerfs #PerkOne .title{
+    display: none;
+}
+
+#sectionModel.SolarRoof #ModelPerfs #PerkOne::before,
+#sectionModel.SolarPanels #ModelPerfs #PerkOne::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-sunset" viewBox="0 0 16 16"><path d="M7.646 4.854a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V1.5a.5.5 0 0 0-1 0v1.793l-.646-.647a.5.5 0 1 0-.708.708l1.5 1.5zm-5.303-.51a.5.5 0 0 1 .707 0l1.414 1.413a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .706l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7zm3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/></svg>');
+    
+}
+#sectionModel.Powerwall #ModelPerfs #PerkOne::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-battery-charging" viewBox="0 0 16 16"><path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"/><path d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2V6zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.405z"/><path d="M12 10h-1.783l1.542-1.639c.097-.103.178-.218.241-.34V10zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646zM16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/></svg>');
+
+}
+#sectionModel.Powerwall #ModelPerfs #PerkThree::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-house-down" viewBox="0 0 16 16"><path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"/><path d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0Z"/></svg>');
+
+}
+/* 
+**
+***SOLAR PANEL
+**
+*
+*/
+#sectionModel.Powerwall #ModelBody .modelBtnCta--secondary,
+#sectionModel.SolarRoof #ModelBody .modelBtnCta--secondary,
+#sectionModel.SolarPanels #ModelBody .modelBtnCta--secondary{
+    display: none;
+}

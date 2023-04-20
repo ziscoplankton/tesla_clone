@@ -1,0 +1,343 @@
+/* BTN TYPE MODEL 3 WITH PLUS LOGO on LAPTOP SCREEN */
+@media(min-width:60rem) and (max-width:70rem){
+    /* HERO MODEL 3 */
+    #HeroModel--Two-Two.heroModel--Model3 .heroModelContent--Two-Two .heroModelCTAs--Two #HeroCtaBUTTON:nth-child(1){
+    }
+    #HeroModel--Two-One.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--primary::before,
+    #HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary::before,
+    #HeroModel--Two-Two.heroModel--Model3 .heroModelContent--Two-Two .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--primary::before{
+        left: 20%;
+        top: -5%;
+    }
+
+    /* HERO SOLARROOF */
+    #HeroModel--Two-Three.HeroModel--Range.heroModel--SolarRoof .heroModelContent--Two-Three .heroModelCTAs--Two,
+    #HeroModel--Two-One.HeroModel--Range.heroModel--solarRoof .heroModelContent--Two-One .heroModelCTAs--Two{
+        display: block;
+        width: 100%;
+        grid-column: 2 / span 4;
+    }
+}
+
+
+/* SOLAR ROOF VIDEO */
+#HeroModel--Two-One.heroModel--solarRoof .heroIMG--Range-solarRoof #HeroVIDEO #myVideos video{
+    max-height: 100vh;
+}
+
+/*SOLAR PANEL VIDEO */
+@media(min-width: 120rem){
+
+    #HeroModel--One-Three.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar{
+        max-height: 70vh !important;
+        min-height: initial;
+    }
+    #HeroModel--One-Three.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO{
+        max-height: 100% !important;
+        min-height: 100% !important;
+
+    }
+    #HeroModel--One-Three.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos{
+        min-height: 100%;
+    }
+    #HeroModel--One-Three.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos video{
+        min-height: 100%;
+    }
+}
+
+/* SOLAR PANEL  SECONDARY BTN ON VIDEO HERO REMOVAL */
+/* SOLAR PANEL SECONDARY BTN ON HERO TYPE RANGE (IMAGE MAX SOLAR PRODUCTION) */
+/* POWERWALL SECONDARY BTN REMOVAL ON HERO 3 & 4 */
+#HeroModel--Two-One.heroModel--PowerWall .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--secondary,
+#HeroModel--Two-Three.heroModel--SolarPanel .heroModelContent--Two-Three .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--secondary,
+#HeroModel--One-Three.heroModel--SolarPanel .heroModelContent--One-Three .heroModelCTAs--One .heroBtnCta--secondary{
+    display: none;
+}
+
+
+/*MODEL 3 PLUS ICON HOVER ON HEROES ONE-ONE */
+#HeroModel--One-Four.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary:hover,
+#HeroModel--Two-One.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--primary:hover,
+#HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary:hover{
+    background-color: transparent;
+    border-color: transparent;
+    color: #000;
+}
+#HeroModel--One-Four.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary::before,
+#HeroModel--Two-One.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--primary:before,
+#HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary::before{
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+#HeroModel--One-Four.heroModel--Model3 .heroModelContent--One-Four .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary:hover::before,
+#HeroModel--Two-One.heroModel--Model3 .heroModelContent--Two-One .heroModelCTAs--Two #HeroCtaBUTTON .heroBtnCta--primary:hover::before,
+#HeroModel--One-One.heroModel--Model3 .heroModelContent--One-One .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--primary:hover::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+    background-color: black;
+    border-color: transparent;
+    border-radius: 50%;
+}
+
+
+/* POWERWALL HERO RANGE MOVE IMG TO RIGHT SIDE */
+@media(min-width:60rem){
+    #HeroModel--Two-One.heroModel--PowerWall {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    #HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall{
+        grid-column: 4 / span 6;
+    
+    }
+    #HeroModel--Two-One.heroModel--PowerWall .heroModelContent--Two-One{
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    
+    }
+}
+@media(min-width:120rem){
+    #HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall{
+        grid-column: 3 / span 7;
+    
+    }
+    #HeroModel--Two-One.heroModel--PowerWall .heroModelContent--Two-One{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    
+    }
+}
+
+/*
+**
+***SOLAR WALL
+**
+*
+*/
+
+/* SOLAR WALL HERO 2 */
+/* LOGOS PERKS */
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkOne::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-house-down" viewBox="0 0 16 16"><path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"/><path d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0Z"/></svg>');
+}
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkOne .heroPerkTitle{
+display: none;
+}
+/*PERK2*/
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkTwo::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-battery-charging" viewBox="0 0 16 16"><path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"/><path d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2V6zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.405z"/><path d="M12 10h-1.783l1.542-1.639c.097-.103.178-.218.241-.34V10zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646zM16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/></svg>');
+}
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkTwo .heroPerkTitle{
+display: none;
+}
+/*PERK3*/
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkThree::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/></svg>');
+}
+#HeroModel--One-One.heroModel--PowerWall #Hero--One.heroIMG--One-One.heroIMG--PowerWall-PowerWall #PowerWall--HeroPerk-perkThree .heroPerkTitle{
+display: none;
+}
+/* REMOVAL SECONDARY BTN*/
+#HeroModel--One-One.heroModel--PowerWall .heroModelContent--One-One .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--secondary{
+    display: none;
+}
+/* ADKUST WIDTH CTA PRIMARY */
+#HeroModel--One-One.heroModel--PowerWall .heroModelContent--One-One .heroModelCTAs--One {
+    flex-direction: column;
+    max-width: 100%;
+}
+
+@media(min-width:120rem){
+    #HeroModel--One-One.heroModel--PowerWall .heroModelContent--One-One .heroModelCTAs--One {
+        flex-direction: column;
+        max-width: 50%;
+    }
+}
+
+/* SOLAR WALL HERO  3 - VISION COLORS & LOGOS*/
+#HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroIMG--Vision-PowerWall .heroImgContent--One-Three{
+    color: #FFF;
+}
+#HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroIMG--Vision-PowerWall .heroImgContent--One-Three #Vision--HeroPerk-perkThree::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-kanban" viewBox="0 0 16 16"><path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z"/><path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z"/></svg>');
+
+}
+#HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroIMG--Vision-PowerWall .heroImgContent--One-Three #Vision--HeroPerk-perkThree .heroPerkTitle{
+    display: none;
+}
+/* REMOVAL SECONDARY CTA AND WIDTH ADJUSTEMENT PRIMARY CTA */
+#HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroModelContent--One-Three .heroModelCTAs--One #HeroCtaBUTTON .heroBtnCta--secondary{
+    display: none;
+}
+#HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroModelContent--One-Three .heroModelCTAs--One {
+    flex-direction: column;
+    max-width: 100%;
+}
+
+@media(min-width: 120rem){
+    #HeroModel--One-Three.heroModel--One.heroModel--PowerWall .heroModelContent--One-Three .heroModelCTAs--One {
+        max-width: 50%;
+    }
+}
+
+/* SOLAR WALL HERO 4 - CTA WIDTH ADJUSTMENET */
+
+#HeroModel--Two-One.heroModel--PowerWall .heroModelContent--Two-One .heroModelCTAs--Two{
+    max-width: 100%;
+}
+@media (min-width:160rem){
+    #HeroModel--Two-One.heroModel--PowerWall .heroModelContent--Two-One .heroModelCTAs--Two{
+        max-width: 50%;
+    }
+}
+/* PERK ONE */
+#HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall .heroImgContent--Two #Range--HeroPerk-perkOne::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-hand-index-thumb" viewBox="0 0 16 16"><path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/></svg>');
+}
+#HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall .heroImgContent--Two #Range--HeroPerk-perkOne .heroPerkTitle{
+    display: none;
+}
+/* PERK THREE */
+#HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall .heroImgContent--Two #Range--HeroPerk-perkThree::before{
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-shield-check" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/></svg>');
+}
+#HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall .heroImgContent--Two #Range--HeroPerk-perkThree .heroPerkTitle{
+    display: none;
+}
+
+/* ALL PERKS ADJUSTEMENT TO CENTER CONTENT */
+#HeroModel--Two-One.heroModel--PowerWall .heroIMG--Range-PowerWall .heroImgContent--Two #Range--HeroPerk-perkTwo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* HERO MODEL S SAFETY IMG POSITION ON LRG SCREEN */
+@media(min-width:60rem){
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS{
+        background-position: -300px -100px;
+    }
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS #pointOne{
+        grid-row: 3;
+    }
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS #pointTwo{
+        grid-row: 9;
+    }
+}
+
+@media(min-width:120rem){
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS{
+        background-position: 0px 20px;
+    }
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS #pointOne{
+        grid-row: 4;
+    }
+    #HeroModel--Two-Two.heroModel--ModelS #Hero--Two.heroIMG--Safety-ModelS #pointTwo{
+        grid-row: 9;
+    }
+}
+
+/* HERO MODEL S RANGE VIDEO HEIGHT */
+@media(min-width:120rem){
+    #HeroModel--Two-One.heroModel--ModelS #Hero--Two.heroIMG--Range-ModelS #HeroVIDEO #myVideos video{
+        border: 5px red solid;
+        max-height: 500px !important;
+    }
+}
+
+/*HERO 3 GridModel SWAP CONTENT TO RIGHT */
+#gridModel.gridModel--modelX-One #gridChild:nth-child(3){
+    flex-direction: row-reverse;
+
+}
+
+/* HERO ModelY Range HEro Adjustements */
+#HeroModel--Two-One.heroModel--ModelY #HeroModelContent.heroModelContent--Two-One{
+    margin: initial;
+}
+
+#sectionModel #ModelBody{
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+/*HERO S,3,X,Y SPECS FOOTER ADJUSTEMENTS*/
+#ModelSpecs--One.modelSpecs--Model-Y-One #ModelSpecsMain #SpecsFooter,
+#ModelSpecs--One.modelSpecs--Model-3-One #ModelSpecsMain #SpecsFooter,
+#ModelSpecs--One.modelSpecs--Model-S-One #ModelSpecsMain #SpecsFooter,
+#ModelSpecs--One.modelSpecs--Model-X-One #ModelSpecsMain #SpecsFooter{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    height: fit-content;
+}
+
+#ModelSpecs--One.modelSpecs--Model-Y-One #ModelSpecsMain #SpecsFooter #HeroModelCTAs,
+#ModelSpecs--One.modelSpecs--Model-3-One #ModelSpecsMain #SpecsFooter #HeroModelCTAs,
+#ModelSpecs--One.modelSpecs--Model-S-One #ModelSpecsMain #SpecsFooter #HeroModelCTAs,
+#ModelSpecs--One.modelSpecs--Model-X-One #ModelSpecsMain #SpecsFooter #HeroModelCTAs{
+    margin: 0 auto !important; 
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+
+/* HERO POWERWALL TYPE RANGE PERKS POSITION ADJUSTEMENTS */
+#HeroModel--Two-One.heroModel--Two.heroModel--PowerWall .heroIMG--Two-One.heroIMG--Range-PowerWall .heroImgContent--Two-One{
+    top: 70%;
+}
+
+/* HERO POWERWALL VIDEO POS ADJUSTEMENT + OTHER VIDEO HEROS MODEL Y MODEL 3 MODEL S */
+#HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar{
+    min-height: initial;
+    max-height: initial;
+}
+
+#HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO{
+    min-height: initial;
+    max-height: initial;
+    height: fit-content;
+}
+#HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos{
+    min-height: initial;
+    max-height: initial;
+    max-height: 100%;
+    height: 100%;
+}
+#HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos video{
+    min-height: initial;
+    max-height: initial;
+    max-height: 100%;
+    height: 100%;
+}
+
+@media(min-width: 120rem){
+    #HeroModel--Two-One.HeroModel--Range.heroModel--ModelY .heroIMG--Two-One.heroIMG--Range-ModelY,
+    #HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar{        min-height: initial !important;
+        max-height: initial !important;
+        height: initial !important;
+        width: initial !important;
+        max-height: fit-content !important;
+    }
+    
+    #HeroModel--Two-One.HeroModel--Range.heroModel--ModelY .heroIMG--Two-One.heroIMG--Range-ModelY #HeroVIDEO,
+    #HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO{        min-height: initial !important;
+        max-height: initial !important;
+        height: initial !important;
+        width: initial !important;
+        height: fit-content;
+    }
+    #HeroModel--Two-One.HeroModel--Range.heroModel--ModelY .heroIMG--Two-One.heroIMG--Range-ModelY #HeroVIDEO #myVideos,
+    #HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos{        min-height: initial !important;
+        max-height: initial !important;
+        height: initial !important;
+        width: initial !important;
+        display: flex;
+    }
+    #HeroModel--Two-One.HeroModel--Range.heroModel--ModelY .heroIMG--Two-One.heroIMG--Range-ModelY #HeroVIDEO #myVideos video,
+    #HeroModel--One-Three.HeroModel--Solar.heroModel--SolarPanel .heroIMG--One-Three.heroIMG--Solar #HeroVIDEO #myVideos video{        min-height: initial !important;
+        max-height: initial !important;
+        width: initial !important;
+        height: initial !important;
+        margin: auto;
+    } 
+
+}

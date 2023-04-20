@@ -1,0 +1,83 @@
+#ShopGrid{
+    min-height: 100vh;
+    position: relative;
+}
+
+#ShopGrid--Men, #ShopGrid--Women, #ShopGrid--Kid{
+    background-image: var(--shopGridBg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+#ShopGridTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-row: 7;
+    grid-column: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#ShopGridBtn{
+    grid-row: 8;
+    grid-column: 1;
+}
+#ShopGridBtn button{
+    padding: 0.5rem;
+    min-width: 100%;
+    border-radius: 3px;
+    border: 3px var(--color-primary) solid;
+    background-color: transparent;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    word-spacing: 1px;
+    letter-spacing: .1px;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+#ShopGridBtn button:hover{
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+
+@media(min-width:40rem){
+    #ShopGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+    }
+
+    #ShopGrid--Men, #ShopGrid--Women, #ShopGrid--Kid{
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #ShopGridTitle {
+        grid-column: 1 / span 3;
+    }
+    #ShopGridBtn {
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+    #ShopGridContent #ShopGridBtn{
+        min-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:90rem){
+    #ShopGridContent {
+        grid-column: 2;
+    }
+}

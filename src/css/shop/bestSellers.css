@@ -1,0 +1,37 @@
+/* BestSllers */
+#ShopHeroCarousel{
+    max-width: 90%;
+    min-height: fit-content;
+    margin: 1rem auto;
+
+}
+#ShopHeroCarouselIMG {
+    max-height: 500px;
+    margin: 1rem;
+}
+
+#ShopHeroBestSellersTitle {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+#ShopHeroBestSellersImgTitle{
+    padding: 1rem;
+    font-weight: 500;
+    margin: .5rem;
+}
+
+.slick-arrow.slick-next svg, .slick-arrow.slick-prev svg {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.slick-slider:hover .slick-arrow.slick-next svg  {
+    opacity: 1;
+}
+.slick-slider:hover .slick-arrow.slick-prev svg  {
+    opacity: 1;
+}
