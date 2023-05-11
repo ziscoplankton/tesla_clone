@@ -304,7 +304,7 @@ export default function Hero({ heroID, heroType, pointsforHeroNaked = null, hero
                         url={video}
                         playing={true}
                         muted={true}
-
+                        loop={true}
                         // Hide the video element
                         id="myVideos"
                     />

@@ -36,7 +36,7 @@ export default function VideoCarousel({videos})
   };
 
   const handlePillClick = (index) => {
-    setCurrentVideo(index)
+    setCurrentVideo(index < 3? index: 0)
   }
 
   return (
