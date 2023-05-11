@@ -17,7 +17,6 @@ export default function VideoCarousel({videos})
   //   "https://tesla-cdn.thron.com/delivery/public/video/tesla/a45a269f-1acf-4022-aa69-0d25518350e2/bvlatuR/WEBHD/MS-Interior-Carousel-5-Gaming-Desktop"
   // ];
 
-  console.log(videos)
 
   const videoContent = [
     {
@@ -32,11 +31,12 @@ export default function VideoCarousel({videos})
 
   const handleVideoEnd = () => {
     // Play the next video when the current video ends
-    setCurrentVideo((prevVideo) => (prevVideo === videos.length - 1 ? -1 : prevVideo));
+    setCurrentVideo((prevVideo) => (prevVideo === videos.length - 1 ? 0 : prevVideo + 1));
   };
 
   const handlePillClick = (index) => {
-    setCurrentVideo(index)
+    console.log(index)
+    setCurrentVideo(index);
   }
 
   return (

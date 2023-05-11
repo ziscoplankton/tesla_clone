@@ -37,7 +37,7 @@ export default function ModelS(){
     />
     <Interior id="1" title="Interior of the Future" imgURL="ModelSinterior" />
     <VideoCarousel 
-    videos={[require('./css/model/video/ModelS/ModelS1.mp4'), require('./css/model/video/ModelS/ModelS2.mp4'), require('./css/model/video/ModelS/ModelS3.mp4'), , require('./css/model/video/ModelS/ModelS4.mp4'), , require('./css/model/video/ModelS/ModelS5.mp4')]}
+    videos={[require('./css/model/video/ModelS/ModelS1.mp4'), require('./css/model/video/ModelS/ModelS2.mp4'), require('./css/model/video/ModelS/ModelS3.mp4'), require('./css/model/video/ModelS/ModelS4.mp4'), require('./css/model/video/ModelS/ModelS5.mp4')]}
     />
     <GridModel 
         imgFolder="modelS"
