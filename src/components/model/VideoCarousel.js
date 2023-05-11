@@ -32,11 +32,11 @@ export default function VideoCarousel({videos})
 
   const handleVideoEnd = () => {
     // Play the next video when the current video ends
-    setCurrentVideo((prevVideo) => (prevVideo === videos.length - 1 ? 0 : prevVideo + 1));
+    setCurrentVideo((prevVideo) => (prevVideo === videos.length - 1 ? -1 : prevVideo));
   };
 
   const handlePillClick = (index) => {
-    setCurrentVideo(index < 3? index: 0)
+    setCurrentVideo(index)
   }
 
   return (
