@@ -60,6 +60,7 @@ export default function HeroCarousel({ keyCarousel, nameCarousel, pageCarousel, 
                     <div id={`heroVideo--${keyCarousel}-${pageCarousel}`} className={`heroVideo--${keyCarousel}-${pageCarousel}-${index} ${index} active`}>
                       <ReactPlayer
                         url={media.url}
+                        playing={true}
                         style={{ width: '1000px', height: '500px' }}
                         config={{
                           file: {

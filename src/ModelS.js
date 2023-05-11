@@ -430,6 +430,7 @@ export default function ModelS(){
     <ModelFooter 
         id="One"
         name="Model S"
+        title="Model S"
         imgFolder="modelS"
         imageName="ModelSFooter.jpeg"
         bgColor="white"

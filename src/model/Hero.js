@@ -302,7 +302,7 @@ export default function Hero({ heroID, heroType, pointsforHeroNaked = null, hero
                 <div id="HeroVIDEO">
                     <ReactPlayer
                         url={video}
-                        playing={false}
+                        playing={true}
                         muted={true}
 
                         // Hide the video element

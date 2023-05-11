@@ -73,8 +73,8 @@ export default function GridModel({imgFolder, imgURL={image1: null, image2: null
                     {videoURL?
                         <ReactPlayer
                         url={video}
-                        playing={false}
-                        loop={false}
+                        playing={true}
+                        loop={true}
                         muted={true}
                         id="gridTwoVideo"
                         style={{}}

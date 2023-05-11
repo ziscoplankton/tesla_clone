@@ -44,7 +44,7 @@ export default function VideoCarousel({videos})
       {/* Render the current video */}
       <ReactPlayer
         url={videos[currentVideo]}
-        playing={false}
+        playing={true}
         muted={true}
         onEnded={handleVideoEnd}
         ref={videoRef}
